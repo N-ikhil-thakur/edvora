@@ -1,0 +1,65 @@
+.desktop__navbar__filter__box.hidden{
+    display: none;
+}
+.desktop__navbar__filter__box{
+    background: #131313;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px 0;
+
+    &__title{
+        font-size: 20px;
+        line-height:24px;
+        // border-bottom: 2px solid #ffffff;
+        padding: 5px 0;
+    }
+    &__seperator{
+        width: 270px;
+        height: 1px;
+        background: #ffffff;
+        margin: 5px 0 ;
+    }
+
+    &__state,&__city{
+        width: 270px;
+        // height: 37px;
+        margin: 7px 0;
+        text-align: left;
+        background: #232323;
+        padding: 12px 12px;
+        font-size: 17px;
+        border-radius: 5px;
+
+        &__toggler{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            svg{
+                cursor: pointer;
+            }
+        }
+        
+        div[class*="select2--hidden"]{
+            display: none;
+        }
+
+        div[class*="select2"]{
+            margin:5px 0;
+            width: 100%;
+            color: #000 !important;
+            background: #000;
+            div{
+                input{
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,42 @@
+.desktop__body__ride{
+    width: 100%;
+    display:flex;
+    padding: 22px 29px;
+    margin: 13px 0 ;
+    background:#171717;
+    border-radius: 10px;
+    position: relative;
+
+    &__map{
+        width: 296px;
+        height: 158px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 44px 0 0;
+
+        img{
+            height: inherit;
+            width: inherit;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 7px 0;
+
+        &__location{
+            position: absolute;
+            right: 1%;
+            display: flex;
+            div{
+                margin: 0 1rem;
+                padding: 5px 20px;
+                border-radius: 10px;
+                background: #000;
+            }   
+        }
+    }
+}
